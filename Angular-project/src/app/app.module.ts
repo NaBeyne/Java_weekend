@@ -20,6 +20,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {loginReducer} from "./state/login/login.reducer";
 import {HttpClientModule} from "@angular/common/http";
+import { TaskComponent } from './components/task/task.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {HttpClientModule} from "@angular/common/http";
     SurnameComponent,
     BirthdateComponent,
     PhoneNumberComponent,
-    HomeComponent
+    HomeComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
