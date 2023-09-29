@@ -19,7 +19,6 @@ export const loginReducer = createReducer(
     initialState,
     on(setLoginState, (state, {payload}) =>
         ({
-            ...state,
             birthDate: payload.birthDate,
             firstName: payload.firstName,
             phoneNumber: payload.phoneNumber,
