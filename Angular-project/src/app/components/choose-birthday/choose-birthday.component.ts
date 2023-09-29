@@ -26,9 +26,12 @@ export class ChooseBirthdayComponent {
     public dialogRef: MatDialogRef<ChooseBirthdayComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    this.day_value = data.bd_value.getUTCMonth() + 1;
-    this.month_value = data.bd_value.getUTCDate();
+    this.month_value = data.bd_value.getUTCMonth() + 1;
+    this.day_value = data.bd_value.getUTCDate();
     this.year_value = data.bd_value.getUTCFullYear();
+    this.bd.year = this.year_value;
+    this.bd.month = this.month_value;
+    this.bd.day = this.day_value;
   }
   updateYear(year: number) {
     this.year_value = year;
@@ -41,13 +44,5 @@ export class ChooseBirthdayComponent {
   updateDay(day: number) {
     this.day_value = day;
     this.bd.day = day;
-  }
-  closeDialog() {
-    this.data.bd_value = new Date(
-      this.year_value,
-      this.month_value - 1,
-      this.day_value
-    );
-    this.dialogRef.close();
   }
 }

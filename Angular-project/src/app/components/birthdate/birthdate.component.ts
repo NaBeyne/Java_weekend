@@ -25,8 +25,8 @@ export class BirthdateComponent {
       .afterClosed()
       .pipe(takeUntil(this.unsubscribeSignal))
       .subscribe((result) => {
-        console.log(result);
-        if (result) this.birthdayValue = result.bd_value;
+        if (result)
+          this.birthdayValue = new Date(result.year, result.month, result.day);
       });
   }
 }

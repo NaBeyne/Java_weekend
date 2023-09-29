@@ -20,11 +20,7 @@
       (newValue)="updateDay($event)"
     ></app-birthday-picker-field>
     <mat-dialog-actions>
-      <button
-        mat-stroked-button
-        (click)="closeDialog()"
-        [mat-dialog-close]="bd"
-      >
+      <button mat-stroked-button [mat-dialog-close]="bd" type="submit">
         This is my Birthday
       </button></mat-dialog-actions
     >
