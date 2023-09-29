@@ -1,0 +1,15 @@
+@import "src/styles.scss";
+
+.bd-picker-field {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+
+.bd-picker-value {
+  width: 10vw;
+}
+
+.button {
+  width: 10vw;
+}

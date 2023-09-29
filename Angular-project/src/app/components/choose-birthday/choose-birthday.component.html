@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-title class="title-bd-picker">Birthday Picker</mat-card-title>
+  <mat-card-content class="fields">
+    <app-birthday-picker-field
+      [max]="max_year"
+      [min]="min_year"
+      [value]="year_value"
+      (newValue)="updateYear($event)"
+    ></app-birthday-picker-field>
+    <app-birthday-picker-field
+      [max]="max_month"
+      [min]="min_month"
+      [value]="month_value"
+      (newValue)="updateMonth($event)"
+    ></app-birthday-picker-field>
+    <app-birthday-picker-field
+      [max]="max_day"
+      [min]="min_day"
+      [value]="day_value"
+      (newValue)="updateDay($event)"
+    ></app-birthday-picker-field>
+    <mat-dialog-actions>
+      <button mat-stroked-button [mat-dialog-close]="bd" type="submit">
+        This is my Birthday
+      </button></mat-dialog-actions
+    >
+  </mat-card-content>
+</mat-card>

@@ -26,7 +26,10 @@ import {TasksComponent} from './components/tasks/tasks.component';
 import { MatButtonModule } from '@angular/material/button';
 import { TaskComponent } from './components/tasks/task/task.component';
 import { SubTaskComponent } from './components/tasks/task/sub-task/sub-task.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { ChooseBirthdayComponent } from './components/choose-birthday/choose-birthday.component';
+import { BirthdayPickerFieldComponent } from './components/birthday-picker-field/birthday-picker-field.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { SubTaskComponent } from './components/tasks/task/sub-task/sub-task.comp
     HomeComponent,
     TasksComponent,
     TaskComponent,
-    SubTaskComponent
+    SubTaskComponent,
+    ChooseBirthdayComponent,
+    BirthdayPickerFieldComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +60,8 @@ import { SubTaskComponent } from './components/tasks/task/sub-task/sub-task.comp
     MatFormFieldModule,
     HttpClientModule,
     MatButtonModule,
+    MatIconModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
