@@ -25,6 +25,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {TasksComponent} from './components/tasks/tasks.component';
 import { MatButtonModule } from '@angular/material/button';
 import { TaskComponent } from './components/tasks/task/task.component';
+import { SubTaskComponent } from './components/tasks/task/sub-task/sub-task.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { TaskComponent } from './components/tasks/task/task.component';
     PhoneNumberComponent,
     HomeComponent,
     TasksComponent,
-    TaskComponent
+    TaskComponent,
+    SubTaskComponent
   ],
   imports: [
     BrowserModule,

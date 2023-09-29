@@ -1,5 +1,5 @@
 <div>
   <ng-container *ngFor="let task of tasks">
-    {{task.subtasks.length}}
+    <app-task [task]="task"></app-task>
   </ng-container>
 </div>

@@ -1,1 +1,3 @@
-<p>task works!</p>
+<ng-container *ngFor="let subtask of task.subtasks">
+  <app-sub-task [subtask]="subtask"></app-sub-task>
+</ng-container>
