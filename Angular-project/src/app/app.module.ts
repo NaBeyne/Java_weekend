@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContainersLoginComponent } from './containers-login/containers-login.component';
 import { LoginComponent } from './containers/login/login.component';
 import { SignupComponent } from './containers/signup/signup.component';
 import { FirstNameComponent } from './components/first-name/first-name.component';
@@ -17,7 +16,7 @@ import { loginReducer } from '../state/login.reducer';
 @NgModule({
   declarations: [
     AppComponent,
-    ContainersLoginComponent,
+    LoginComponent,
     LoginComponent,
     SignupComponent,
     FirstNameComponent,
