@@ -1,1 +1,13 @@
-<p>lastname works!</p>
+<p>Surname</p>
+<div class="surname-container">
+  <input
+    matInput
+    readonly
+    type="text"
+    [value]="surname"
+    placeholder="Surname"
+  />
+  <input matInput readonly type="text" [value]="currentLetter" />
+  <button mat-raised-button (click)="randomLetter()">New letter</button>
+  <button mat-raised-button (click)="addToName()">Add to name</button>
+</div>

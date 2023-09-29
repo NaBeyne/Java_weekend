@@ -14,6 +14,8 @@ import { StoreModule } from '@ngrx/store';
 import { loginReducer } from '../state/login.reducer';
 import { HomeComponent } from './containers/home/home.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     StoreModule.forRoot({ login: loginReducer }),
     MatCardModule,
+    MatButtonModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
