@@ -31,7 +31,11 @@ export interface ITaskState {
 export const initialState: ITaskState = {
     tasks: [
       new Task([
-        new SubTask("test")
+        new SubTask("vuilnis buitenzetten"),
+        new SubTask("test2")
+      ]),
+      new Task([
+        new SubTask("tye"),
       ])
     ]
 }
