@@ -12,7 +12,6 @@ import { PhoneNumberComponent } from './components/phone-number/phone-number.com
 
 import { StoreModule } from '@ngrx/store';
 import { loginReducer } from '../state/login.reducer';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FirstNameComponent,
     SurnameComponent,
     BirthdateComponent,
-    PhoneNumberComponent
+    PhoneNumberComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
