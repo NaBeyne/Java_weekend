@@ -27,7 +27,7 @@ import { loginReducer } from '../state/login.reducer';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    StoreModule.forRoot({ count: loginReducer })
+    StoreModule.forRoot({ login: loginReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]

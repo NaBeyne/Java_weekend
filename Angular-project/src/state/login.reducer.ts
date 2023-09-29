@@ -1,19 +1,44 @@
 import { createReducer, on } from '@ngrx/store';
-import { login } from './login.actions';
+import { setBirthDate, setFirstName, setPhoneNumber, setSurname } from './login.actions';
 
 export interface ILoginState {
-    value: number;
+    birthDate: Date | undefined,
+    firstName: string,
+    phoneNumber: string,
+    surname: string
 }
    
 export const initialState: ILoginState = {
-    value: 0
+    birthDate: undefined,
+    firstName: '',
+    phoneNumber: '',
+    surname: ''
 }
    
 export const loginReducer = createReducer(
     initialState,
-    on(login, (state, {payload}) => 
+    on(setBirthDate, (state, {payload}) => 
         ({
-            value: payload
+            ...state,
+            birthDate: payload
+        })
+    ),
+    on(setFirstName, (state, {payload}) => 
+        ({
+            ...state,
+            firstName: payload
+        })
+    ),
+    on(setPhoneNumber, (state, {payload}) => 
+        ({
+            ...state,
+            phoneNumber: payload
+        })
+    ),
+    on(setSurname, (state, {payload}) => 
+        ({
+            ...state,
+            surname: payload
         })
     )
 );
