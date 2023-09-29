@@ -1,7 +1,10 @@
+@import "src/styles.scss";
+
 mat-card {
   margin: 2em auto;
   text-align: center;
   padding: 2rem;
+  background-color: $white;
 }
 
 .center-container {
