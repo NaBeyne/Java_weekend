@@ -14,6 +14,10 @@ import { StoreModule } from '@ngrx/store';
 import { loginReducer } from '../state/login.reducer';
 import { HomeComponent } from './containers/home/home.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ChooseBirthdayComponent } from './components/choose-birthday/choose-birthday.component';
+import { BirthdayPickerFieldComponent } from './components/birthday-picker-field/birthday-picker-field.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +30,16 @@ import { MatCardModule } from '@angular/material/card';
     BirthdateComponent,
     PhoneNumberComponent,
     HomeComponent,
+    ChooseBirthdayComponent,
+    BirthdayPickerFieldComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({ login: loginReducer }),
     MatCardModule,
+    MatIconModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

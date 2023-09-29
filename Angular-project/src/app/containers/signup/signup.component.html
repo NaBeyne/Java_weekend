@@ -5,7 +5,12 @@
       <app-first-name></app-first-name>
       <app-surname></app-surname>
       <app-phone-number></app-phone-number>
-      <app-birthdate></app-birthdate>
+      <app-birthdate
+        [birthdayValue]="birthday"
+        (newYear)="updateYear($any($event))"
+        (newMonth)="updateMonth($any($event))"
+        (newDay)="updateDay($any($event))"
+      ></app-birthdate>
       <a routerLink="/home">
         <button mat-stroked-button>SIGN UP</button>
       </a>
