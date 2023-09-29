@@ -1,1 +1,10 @@
-<p>phone-number works!</p>
+<div>
+  <div>
+    <label>{{ getFormattedValue() }} </label>
+  </div>
+  <mat-slider
+    [max]="999999999"
+    [min]="0">
+      <input matSliderThumb [(ngModel)]="value" #slider>
+  </mat-slider>
+</div>

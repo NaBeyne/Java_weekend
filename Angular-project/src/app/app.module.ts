@@ -14,6 +14,11 @@ import { StoreModule } from '@ngrx/store';
 import { loginReducer } from '../state/login.reducer';
 import { HomeComponent } from './containers/home/home.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -32,6 +37,11 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     StoreModule.forRoot({ login: loginReducer }),
     MatCardModule,
+    MatSliderModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent],
