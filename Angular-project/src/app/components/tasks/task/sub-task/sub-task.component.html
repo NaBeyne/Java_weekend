@@ -1,2 +1,7 @@
-<div>{{ subtask.description }}</div>
-<div>{{ subtask.solved }}</div>
+<div>
+  <mat-checkbox
+        [checked]="subtask.solved "
+        (change)="toggle()">
+    {{ subtask.description }}
+  </mat-checkbox>
+</div>

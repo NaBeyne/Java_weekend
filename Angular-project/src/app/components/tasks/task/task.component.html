@@ -1,6 +1,6 @@
 <div>
   <h1>Task</h1>
   <ng-container *ngFor="let subtask of task.subtasks">
-    <app-sub-task [subtask]="subtask"></app-sub-task>
+    <app-sub-task [task]="task" [subtask]="subtask"></app-sub-task>
   </ng-container>
 </div>
