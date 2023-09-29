@@ -13,6 +13,7 @@ import { PhoneNumberComponent } from './components/phone-number/phone-number.com
 import { StoreModule } from '@ngrx/store';
 import { loginReducer } from '../state/login.reducer';
 import { HomeComponent } from './containers/home/home.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HomeComponent } from './containers/home/home.component';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({ login: loginReducer }),
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
