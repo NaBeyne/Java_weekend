@@ -5,7 +5,7 @@ mat-card {
   text-align: center;
   padding: 2rem;
   background-color: $white;
-  width: 50vw;
+  width: 60vw;
 }
 
 .center-container {
@@ -13,4 +13,8 @@ mat-card {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+mat-card-title {
+  color: $dark-green;
 }

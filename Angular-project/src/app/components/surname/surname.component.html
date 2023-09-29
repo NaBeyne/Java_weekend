@@ -1,13 +1,15 @@
-<p>Surname</p>
-<div class="surname-container">
-  <input
-    matInput
-    readonly
-    type="text"
-    [value]="surname"
-    placeholder="Surname"
-  />
-  <input matInput readonly type="text" [value]="currentLetter" />
-  <button mat-raised-button (click)="startOrPauze()">{{ btnLabel }}</button>
-  <button mat-raised-button (click)="addToName()">Add to name</button>
+<div class="input-field">
+  <p>Surname</p>
+  <div class="surname-container">
+    <input
+      matInput
+      readonly
+      type="text"
+      [value]="surname"
+      placeholder="Surname"
+    />
+    <input matInput readonly type="text" [value]="currentLetter" />
+    <button mat-raised-button (click)="startOrPauze()">{{ btnLabel }}</button>
+    <button mat-raised-button (click)="addToName()">Add to name</button>
+  </div>
 </div>
