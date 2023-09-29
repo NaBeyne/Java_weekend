@@ -1,6 +1,6 @@
-<div>
-  <h1>Task</h1>
+<mat-card>
+  <mat-card-header>Task</mat-card-header>
   <ng-container *ngFor="let subtask of task.subtasks">
     <app-sub-task [task]="task" [subtask]="subtask"></app-sub-task>
   </ng-container>
-</div>
+</mat-card>
