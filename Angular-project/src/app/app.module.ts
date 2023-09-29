@@ -21,6 +21,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {loginReducer} from "./state/login/login.reducer";
 import {HttpClientModule} from "@angular/common/http";
 import { TaskComponent } from './components/task/task.component';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -46,6 +48,7 @@ import { TaskComponent } from './components/task/task.component';
     MatInputModule,
     MatFormFieldModule,
     HttpClientModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
