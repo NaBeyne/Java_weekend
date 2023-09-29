@@ -12,6 +12,7 @@ import { PhoneNumberComponent } from './components/phone-number/phone-number.com
 
 import { StoreModule } from '@ngrx/store';
 import { loginReducer } from '../state/login.reducer';
+import { HomeComponent } from './containers/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +24,14 @@ import { loginReducer } from '../state/login.reducer';
     SurnameComponent,
     BirthdateComponent,
     PhoneNumberComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
-    StoreModule.forRoot({ login: loginReducer }), BrowserAnimationsModule
+    AppRoutingModule,
+    StoreModule.forRoot({ login: loginReducer }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
