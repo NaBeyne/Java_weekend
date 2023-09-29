@@ -29,7 +29,11 @@ export interface ITaskState {
 }
    
 export const initialState: ITaskState = {
-    tasks: [] // todo hier al wat test data zetten?
+    tasks: [
+      new Task([
+        new SubTask("test")
+      ])
+    ]
 }
    
 export const taskReducer = createReducer(

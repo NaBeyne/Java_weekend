@@ -11,6 +11,9 @@ import {BirthdateComponent} from './components/birthdate/birthdate.component';
 import {PhoneNumberComponent} from './components/phone-number/phone-number.component';
 
 import {StoreModule} from '@ngrx/store';
+import {loginReducer} from "./state/login/login.reducer";
+import {taskReducer} from "./state/task/task.reducer";
+
 import {HomeComponent} from './containers/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatSliderModule} from '@angular/material/slider';
@@ -18,10 +21,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {loginReducer} from "./state/login/login.reducer";
 import {HttpClientModule} from "@angular/common/http";
-import { TaskComponent } from './components/task/task.component';
+import {TasksComponent} from './components/tasks/tasks.component';
 import { MatButtonModule } from '@angular/material/button';
+import { TaskComponent } from './components/tasks/task/task.component';
 
 
 @NgModule({
@@ -35,12 +38,13 @@ import { MatButtonModule } from '@angular/material/button';
     BirthdateComponent,
     PhoneNumberComponent,
     HomeComponent,
+    TasksComponent,
     TaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ login: loginReducer }),
+    StoreModule.forRoot({ login: loginReducer, tasks: taskReducer }),
     MatCardModule,
     MatSliderModule,
     MatCheckboxModule,
